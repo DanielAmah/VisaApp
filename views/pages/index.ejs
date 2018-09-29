@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+    <div class="container-contact100">
+        <span class="contact100-title">
+          Visa API App
+        </span>
+        <div class="wrap-contact100">
+          <div>
+            <div>
+              <form method="post" action="/account" name="form" class="contact100-form validate-form" id="aci-checkout">
+
+                <span class="contact100-form-title">
+                  Get Account Status
+                </span>
+                <div class="container-contact100-form-btn">
+                    <button type="submit" class="contact100-form-btn">
+                      <span>
+                        Get Account Status
+                        <i class="zmdi zmdi-arrow-right m-l-8"></i>
+                      </span>
+                    </button>
+                  </div>
+              </form>
+            </div>
+
+            <br>
+            <div>
+                <span class="contact100-form-title">
+                    Get Suppliers
+                </span>
+                <form name="form" method="post" action="/supplier"  class="contact100-form">
+                  <div class="wrap-input100 rs1">
+                    <input class="input100" value="B2BWS_1_1_9999" name="clientid" readonly>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="supplierName" placeholder="Supplier Name" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="supplierAddressLine1" placeholder="Supplier Address" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="supplierCity" placeholder="Supplier City e.g LG" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="supplierCountryCode" placeholder="Country Code e.g USA" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="supplierDate" placeholder="Supplier Date e.g MMDDYYYY" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="container-contact100-form-btn">
+                      <button class="contact100-form-btn">
+                        <span>
+                          Get Suppliers
+                          <i class="zmdi zmdi-arrow-right m-l-8"></i>
+                        </span>
+                      </button>
+                    </div>
+                </form>
+
+            </div>
+
+            <br>
+            <div>
+                <span class="contact100-form-title">
+                    Payments
+                </span>
+                <form name="form" method="post" action="/payment" class="contact100-form">
+                  <div class="wrap-input100 rs1 validate-input">
+                    <input class="input100" value="RESTAPISupp-007" name="supplierId" readonly>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="accountNumber" placeholder="Account Number" required >
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="accountType" placeholder="Account Type e.g 1 or 2" required >
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="cardAccountExpiryDate" placeholder="Card Expiry Date e.g 02/2021" required >
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="paymentGrossAmount" placeholder="Gross Amount" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="currencyCode" placeholder="Currency Code e.g USD" required>
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="container-contact100-form-btn">
+                      <button class="contact100-form-btn">
+                        <span>
+                           Make Payments
+                          <i class="zmdi zmdi-arrow-right m-l-8"></i>
+                        </span>
+                      </button>
+                    </div>
+                </form>
+            </div>
+
+            <br>
+            <div>
+                <span class="contact100-form-title">
+                    Requisition
+                </span>
+                <form name="form" method="post" action="/requisition" class="contact100-form">
+                  <div class="wrap-input100 rs1">
+                    <input class="input100" value="RESTAPISupp-007" name="clientId" readonly >
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="firstName" placeholder="First Name" required >
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div  class="wrap-input100 rs1">
+                    <input class="input100" name="lastName" placeholder="Last Name" required >
+                    <span class="focus-input100"></span>
+                  </div>
+                    <div class="wrap-input100 rs1">
+                    <input class="input100" name="employeeId" placeholder="Employee ID e.g AB123" >
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="container-contact100-form-btn">
+                      <button class="contact100-form-btn">
+                        <span>
+                          Get Requisition
+                          <i class="zmdi zmdi-arrow-right m-l-8"></i>
+                        </span>
+                      </button>
+                    </div>
+                </form>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+      <!--===============================================================================================-->
+      <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/animsition/js/animsition.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/bootstrap/js/popper.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/select2/select2.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/daterangepicker/moment.min.js"></script>
+      <script src="vendor/daterangepicker/daterangepicker.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/countdowntime/countdowntime.js"></script>
+      <!--===============================================================================================-->
+      <script src="js/main.js"></script>
+
+
+</body>
+</html>
